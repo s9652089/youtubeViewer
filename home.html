@@ -1,0 +1,25 @@
+<html>
+<body onload="newDoc()">
+
+<h2>JavaScript</h2>
+
+<h3>See the magic!!</h3> 
+
+<input type="button" value="Load new video" onclick="newDoc()">
+
+<script>
+function newDoc() { 
+	var  i=0;
+	while(i<10){
+		console.log(i);
+		setTimeout(function(){
+			var myWindow = window.open("https://www.youtube.com/watch?v=PmTzaKR4EK0");
+			myWindow.close();
+		},31000);
+ 	i++;
+	}
+}
+</script>
+
+</body>
+</html>
